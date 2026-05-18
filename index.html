@@ -1,0 +1,53 @@
+html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Jornada de Decisões</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!-- Passo Inicial (Ativo por padrão) -->
+        <div class="passo ativo" id="passo-0">
+        <div class="passo ativo" id="passo-0">
+            <h1>O Início da Aventura</h1>
+            <p>Você encontrou um mapa antigo no sótão. O que deseja fazer?</p>
+            <button class="btn-proximo" data-proximo="1">Seguir a trilha da floresta</button>
+            <button class="btn-proximo" data-proximo="2">Explorar a caverna misteriosa</button>
+        </div>
+
+        <!-- Passo 1: Floresta -->
+        <div class="passo" id="passo-1">
+            <h1>A Trilha da Floresta</h1>
+            <p>A floresta é densa, mas você encontra uma cabana abandonada. Entrar ou continuar?</p>
+            <button class="btn-proximo" data-proximo="3">Entrar na cabana</button>
+            <button class="btn-proximo" data-proximo="0">Voltar ao início</button>
+        </div>
+
+        <!-- Passo 2: Caverna -->
+        <div class="passo" id="passo-2">
+            <h1>A Caverna Misteriosa</h1>
+            <p>Está muito escuro e você ouve um som estranho de água correndo.</p>
+            <button class="btn-proximo" data-proximo="4">Seguir o som da água</button>
+            <button class="btn-proximo" data-proximo="0">Fugir e voltar ao início</button>
+        </div>
+
+        <!-- Passo 3: Cabana -->
+        <div class="passo" id="passo-3">
+            <h1>Dentro da Cabana</h1>
+            <p>Parabéns! Você encontrou um baú cheio de moedas de ouro. Você venceu!</p>
+            <button class="btn-proximo" data-proximo="0">Jogar Novamente</button>
+        </div>
+
+        <!-- Passo 4: Fim de Jogo (Caverna) -->
+        <div class="passo" id="passo-4">
+            <h1>O Rio Subterrâneo</h1>
+            <p>O chão cedeu e você caiu em um rio sem saída. Fim de jogo!</p>
+            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
+        </div>
+    </main>
+
+    <!-- O "defer" garante que o JS rode após a página carregar -->
+    <script src="script.js" defer></script>
+</body>
+</html>
