@@ -1,53 +1,85 @@
-html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Jornada de Decisões</title>
+    <title>Minha Galeria de Imagens</title>
+    <!-- Vincula o arquivo CSS externo -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <!-- Passo Inicial (Ativo por padrão) -->
-        <div class="passo ativo" id="passo-0">
-        <div class="passo ativo" id="passo-0">
-            <h1>O Início da Aventura</h1>
-            <p>Você encontrou um mapa antigo no sótão. O que deseja fazer?</p>
-            <button class="btn-proximo" data-proximo="1">Seguir a trilha da floresta</button>
-            <button class="btn-proximo" data-proximo="2">Explorar a caverna misteriosa</button>
-        </div>
 
-        <!-- Passo 1: Floresta -->
-        <div class="passo" id="passo-1">
-            <h1>A Trilha da Floresta</h1>
-            <p>A floresta é densa, mas você encontra uma cabana abandonada. Entrar ou continuar?</p>
-            <button class="btn-proximo" data-proximo="3">Entrar na cabana</button>
-            <button class="btn-proximo" data-proximo="0">Voltar ao início</button>
-        </div>
+    <!-- Cabeçalho do Site -->
+    <header>
+        <h1>Galeria Visual</h1>
+        <p>Uma coleção de imagens inspiradoras e fotografias impressionantes</p>
+    </header>
 
-        <!-- Passo 2: Caverna -->
-        <div class="passo" id="passo-2">
-            <h1>A Caverna Misteriosa</h1>
-            <p>Está muito escuro e você ouve um som estranho de água correndo.</p>
-            <button class="btn-proximo" data-proximo="4">Seguir o som da água</button>
-            <button class="btn-proximo" data-proximo="0">Fugir e voltar ao início</button>
-        </div>
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <section class="gallery-grid">
+            
+            <!-- Item 1: Imagem Enviada por Você -->
+            <div class="gallery-item">
+                <img src="https://turismocity.com" alt="Linda praia do litoral de São Paulo com águas claras e vegetação">
+                <div class="image-info">
+                    <h3>Litoral de São Paulo</h3>
+                    <p>Sua Imagem Selecionada</p>
+                </div>
+            </div>
 
-        <!-- Passo 3: Cabana -->
-        <div class="passo" id="passo-3">
-            <h1>Dentro da Cabana</h1>
-            <p>Parabéns! Você encontrou um baú cheio de moedas de ouro. Você venceu!</p>
-            <button class="btn-proximo" data-proximo="0">Jogar Novamente</button>
-        </div>
+            <!-- Item 2: Montanhas -->
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="Montanhas cobertas por névoa verdejante">
+                <div class="image-info">
+                    <h3>Montanhas Verdes</h3>
+                    <p>Por Carlos Silva</p>
+                </div>
+            </div>
 
-        <!-- Passo 4: Fim de Jogo (Caverna) -->
-        <div class="passo" id="passo-4">
-            <h1>O Rio Subterrâneo</h1>
-            <p>O chão cedeu e você caiu em um rio sem saída. Fim de jogo!</p>
-            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
-        </div>
+            <!-- Item 3: Floresta -->
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="Raios de sol atravessando árvores na floresta">
+                <div class="image-info">
+                    <h3>Luz da Floresta</h3>
+                    <p>Por Mariana Costa</p>
+                </div>
+            </div>
+
+            <!-- Item 4: Ponte de Madeira -->
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="Ponte suspensa de madeira em meio à natureza">
+                <div class="image-info">
+                    <h3>Caminho Secreto</h3>
+                    <p>Por Pedro Santos</p>
+                </div>
+            </div>
+
+            <!-- Item 5: Estrada -->
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="Estrada sinuosa cruzando montanhas rochosas">
+                <div class="image-info">
+                    <h3>Aventura na Estrada</h3>
+                    <p>Por Julia Reis</p>
+                </div>
+            </div>
+
+            <!-- Item 6: Aurora Boreal -->
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="Aurora boreal colorindo o céu noturno acima de floresta">
+                <div class="image-info">
+                    <h3>Céu de Aurora</h3>
+                    <p>Por Lucas Lima</p>
+                </div>
+            </div>
+
+        </section>
     </main>
 
-    <!-- O "defer" garante que o JS rode após a página carregar -->
-    <script src="script.js" defer></script>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Meu Site de Imagens. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
